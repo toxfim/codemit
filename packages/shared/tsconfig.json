@@ -1,0 +1,8 @@
+{
+  "extends": "@codemit/configs/tsbase",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["utils"],
+  "exclude": ["node_modules"]
+}

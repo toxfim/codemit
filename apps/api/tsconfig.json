@@ -1,0 +1,13 @@
+{
+  "extends": "@codemit/configs/tsbase",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "nodenext",
+    "paths": {
+      "@/api/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

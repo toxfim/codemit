@@ -1,0 +1,21 @@
+{
+  "name": "@codemit/shared",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sardor Sattorov",
+  "license": "ISC",
+  "exports": {
+    "./utils": "./utils/index.ts"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "devDependencies": {
+    "@types/node": "^25.3.1",
+    "@codemit/configs": "workspace:^"
+  }
+}

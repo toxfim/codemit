@@ -1,0 +1,11 @@
+{
+  "extends": "@codemit/configs/tsbase",
+  "compilerOptions": {
+    "paths": {
+      "@/bot/*": ["./src/*"]
+    },
+    "module": "nodenext"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -51,25 +51,16 @@ temp/
 
 # Apps
 
-apps/api/node_modules/
-apps/api/dist/
-apps/api/.env
+apps/*/node_modules/
+apps/*/dist/
+apps/*/.env
 
-apps/bot/node_modules/
-apps/bot/dist/
-apps/bot/.env
 
 # Packages
 
-packages/db/node_modules/
-packages/db/.env/
+packages/*/node_modules/
+packages/*/.env/
 
-
-packages/configs/node_modules/
-packages/configs/.env
-
-packages/shared/utils/node_modules/
-packages/shared/utils/.env
 
 
 

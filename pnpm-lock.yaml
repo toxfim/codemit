@@ -47,7 +47,7 @@ importers:
         specifier: workspace:^
         version: link:../../packages/configs
       '@codemit/db':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/db
       '@codemit/shared':
         specifier: workspace:^

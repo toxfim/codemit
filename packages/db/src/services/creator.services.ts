@@ -1,10 +1,10 @@
 import { eq } from "drizzle-orm";
 
-import db from "@/db";
-import { creatorsTable, CreatorInput } from "@/schemas";
+import db from "../db";
+import { creatorsTable, type CreatorInput } from "../schemas";
 
 class CreatorService {
-  async createOne(payload: CreatorInput) {
+  async createOne(payload: Required<CreatorInput>) {
     const [newCreator] = await db
       .insert(creatorsTable)
       .values(payload)

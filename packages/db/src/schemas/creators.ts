@@ -1,11 +1,9 @@
-import { relations } from "drizzle-orm";
+// import { relations } from "drizzle-orm";
 import { serial, varchar, pgTable } from "drizzle-orm/pg-core";
 
-import { Enums, timestampstz } from "@/core";
+import { Enums, timestampstz } from "../core";
 
-import { paymentsTable, profileTable } from ".";
-
-export type CreatorInput = typeof creatorsTable.$inferSelect;
+// import { paymentsTable, profileTable } from ".";
 
 export const creatorsTable = pgTable("creators", {
   id: serial("id").primaryKey(),
@@ -24,7 +22,11 @@ export const creatorsTable = pgTable("creators", {
   ...timestampstz(),
 });
 
-export const creatorsRelations = relations(creatorsTable, ({ many }) => ({
-  payments: many(paymentsTable),
-  business: many(profileTable),
-}));
+// export const creatorsRelations = relations(creatorsTable, ({ many }) => ({
+//   payments: many(paymentsTable),
+//   business: many(profileTable),
+// }));
+
+// types
+export type CreatorInput = typeof creatorsTable.$inferSelect;
+export type CreatorUpdate = Partial<CreatorInput>;

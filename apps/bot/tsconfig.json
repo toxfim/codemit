@@ -4,7 +4,8 @@
     "paths": {
       "@/bot/*": ["./src/*"]
     },
-    "module": "nodenext"
+    "module": "preserve",
+    "moduleResolution": "bundler"
   },
   "include": ["src"],
   "exclude": ["node_modules"]

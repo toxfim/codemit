@@ -8,7 +8,7 @@ import {
   STATUS_BUSINESS_PROFILE,
   SUBS_PLAN,
   USER_ROLE,
-} from "@/db/helpers/constants";
+} from "../helpers/constants";
 
 // Business profile enums
 export const BusinessProfileStatus = pgEnum(

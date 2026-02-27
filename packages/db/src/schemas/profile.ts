@@ -1,7 +1,7 @@
 import { relations } from "drizzle-orm";
 import { integer, uuid, pgTable, varchar, text } from "drizzle-orm/pg-core";
 
-import { Enums, timestampstz } from "@/db/core";
+import { Enums, timestampstz } from "../core";
 
 import { creatorsTable, locationsTable } from ".";
 

@@ -1,16 +1,38 @@
 {
-  "extends": "@codemit/configs/tsbase",
   "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "module": "preserve",
+    "moduleDetection": "force",
+
+    // JSX setup
+    "allowJs": true,
+
+    // Bundler mode
+    "noEmit": false,
+    "verbatimModuleSyntax": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Best practices
+    "skipLibCheck": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Linting */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+
     /* Aliases */
-    // "rootDir": "./src",
-    // "outDir": "./dist",
-    // "paths": {
-    //   "@/*": ["./src/*"]
-    // },
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
-  "include": ["src"],
+  "include": ["./src/**/*", "./src/**/*.{mts,ts,json,js,mjs,cjs}"],
   "exclude": ["node_modules"]
 }

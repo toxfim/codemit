@@ -19,6 +19,6 @@
   "devDependencies": {
     "@codemit/configs": "workspace:^",
     "@codemit/shared": "workspace:^",
-    "@codemit/db": "workspace:^"
+    "@codemit/db": "workspace:*"
   }
 }

@@ -11,7 +11,8 @@
     ".": "./src/index.ts",
     "./helpers": "./src/helpers/index.ts",
     "./core": "./src/core/index.ts",
-    "./schemas": "./src/schemas/index.ts"
+    "./schemas": "./src/schemas/index.ts",
+    "./services": "./src/services/index.ts"
   },
   "keywords": [],
   "author": "",

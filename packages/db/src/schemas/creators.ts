@@ -1,11 +1,11 @@
 import { relations } from "drizzle-orm";
 import { serial, varchar, pgTable } from "drizzle-orm/pg-core";
 
-import { timestampstz, Enums } from "@/db/core";
+import { Enums, timestampstz } from "@/core";
 
 import { paymentsTable, profileTable } from ".";
 
-export type TypeCreator = typeof creatorsTable.$inferSelect;
+export type CreatorInput = typeof creatorsTable.$inferSelect;
 
 export const creatorsTable = pgTable("creators", {
   id: serial("id").primaryKey(),

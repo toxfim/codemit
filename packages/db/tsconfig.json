@@ -1,8 +1,14 @@
 {
   "extends": "@codemit/configs/tsbase",
   "compilerOptions": {
+    /* Aliases */
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // },
     "paths": {
-      "@/db/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"],

@@ -1,1 +1,1 @@
-export * from "./creator.services";
+export { default as creatorService } from "./creator.services";

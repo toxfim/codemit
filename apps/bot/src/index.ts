@@ -1,7 +1,11 @@
 import { Bot } from "grammy";
-import configs from "./configs.js";
+import { creatorService } from "@codemit/db";
+
+import configs from "./configs";
 
 const bot = new Bot(configs.BOT_TOKEN);
+
+creatorService.createOne({});
 
 bot.command("start", (ctx) => ctx.reply("Hello, I'm your bot!"));
 

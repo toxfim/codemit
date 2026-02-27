@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "type": "module",
   "main": "index.ts",
   "scripts": {
     "dev": "bun run ./src/index.ts",
@@ -19,6 +18,7 @@
   },
   "devDependencies": {
     "@codemit/configs": "workspace:^",
-    "@codemit/shared": "workspace:^"
+    "@codemit/shared": "workspace:^",
+    "@codemit/db": "workspace:^"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "extends": "@codemit/configs/tsbase",
+  "compilerOptions": {
+    "paths": {
+      "@/db/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@codemit/db",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./helpers": "./src/helpers/index.ts",
+    "./core": "./src/core/index.ts",
+    "./schemas": "./src/schemas/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.3",
+  "dependencies": {
+    "drizzle-orm": "^0.45.1",
+    "pg": "^8.19.0"
+  },
+  "devDependencies": {
+    "@codemit/configs": "workspace:*",
+    "@codemit/shared": "workspace:*",
+    "@types/node": "^25.3.1",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.31.9"
+  }
+}
